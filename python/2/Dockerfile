@@ -1,12 +1,12 @@
-FROM registry.centos.org/centos/centos
+FROM registry.centos.org/dharmit/base
 
 MAINTAINER Dharmit Shah <dshah@redhat.com>
 
-RUN yum -y update && \
-    yum -y install epel-release && \
-    yum -y install python-pip && \
+RUN  sudo yum -y update && \
+     sudo yum -y install epel-release && \
+     sudo yum -y install python-pip && \
     pip install --upgrade pip && \
-    yum -y remove epel-release && \
-    yum clean all 
+     sudo yum -y remove epel-release && \
+     sudo yum clean all 
 
 ENTRYPOINT ["/bin/bash"]

@@ -1,12 +1,12 @@
-FROM registry.centos.org/centos/centos
+FROM registry.centos.org/dharmit/base
 
 MAINTAINER "Dharmit Shah <dshah@redhat.com>"
 
-RUN yum -y update && \
-    yum -y install git make wget && \
-    yum -y install golang && \
-    yum -y install epel-release && \
-    yum -y install glide && \
-    yum clean all
+RUN  sudo yum -y update && \
+     sudo yum -y install git make wget && \
+     sudo yum -y install golang && \
+     sudo yum -y install epel-release && \
+     sudo yum -y install glide && \
+     sudo yum clean all
 
 ENTRYPOINT ["/bin/bash"]
