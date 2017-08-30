@@ -9,4 +9,4 @@ RUN  sudo yum -y update && \
      sudo yum clean all && \
     cat /opt/rh/rh-python35/enable >> /root/.bashrc
 
-ENTRYPOINT ["/bin/bash"]
+CMD ["/bin/bash"]

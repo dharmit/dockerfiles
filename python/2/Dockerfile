@@ -9,4 +9,4 @@ RUN  sudo yum -y update && \
      sudo yum -y remove epel-release && \
      sudo yum clean all 
 
-ENTRYPOINT ["/bin/bash"]
+CMD ["/bin/bash"]
