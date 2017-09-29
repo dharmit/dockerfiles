@@ -12,3 +12,5 @@ RUN yum -y update && \
     sed -i 's/requiretty/!requiretty/g' /etc/sudoers 
 
 USER user
+
+WORKDIR /home/user
