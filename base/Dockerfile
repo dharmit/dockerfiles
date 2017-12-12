@@ -14,3 +14,5 @@ RUN yum -y update && \
 USER user
 
 WORKDIR /home/user
+
+CMD ["tail", "-f", "/dev/null"]
