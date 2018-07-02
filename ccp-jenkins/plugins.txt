@@ -1,0 +1,2 @@
+# Plugins for CentOS Container Pipeline
+email-ext:2.62
